@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import {
     Route,
     NavLink,
-    BrowserRouter
+    BrowserRouter as Router
   } from "react-router-dom";
   import Home from "./Home";
   import Blog from "./Blog/Blog";
@@ -11,7 +11,7 @@ import {
   class Main extends Component {
     render() {
       return (
-        <BrowserRouter>
+        <Router>
           <div>
             <div className="header">
               <div className="mwc">
@@ -36,7 +36,7 @@ import {
               </div>
             </div>
           </div>
-        </BrowserRouter>
+        </Router>
       );
     }
   }
