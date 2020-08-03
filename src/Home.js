@@ -5,7 +5,7 @@ class Home extends Component {
         return (
             <div>
                 <h2>Hi,</h2>
-                <p>My personal website to showcase my development journey through 2020</p>
+                <p className="content-description">My personal website to showcase my development journey through 2020.</p>
             </div>
         );
     }

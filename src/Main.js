@@ -14,20 +14,26 @@ import {
         <HashRouter>
           <div>
             <div className="header">
-            <h1>James Pereira</h1>
-                <ul className="nav">
-                <li><NavLink exact to="/">Home</NavLink></li>
-                <li><NavLink to="/blog">Blog</NavLink></li>
-                <li><NavLink to="/portfolio">Portfolio</NavLink></li>
-                </ul>
-            </div>
+              <div className="mwc">
+                <h1>James Pereira</h1>
+                    <ul className="nav">
+                    <li><NavLink exact to="/">Home</NavLink></li>
+                    <li><NavLink to="/blog">Blog</NavLink></li>
+                    <li><NavLink to="/portfolio">Portfolio</NavLink></li>
+                    </ul>
+                </div>
+              </div>
             <div className="content">
+              <div className="mwc">
                 <Route exact path="/" component={Home}/>
                 <Route path="/blog" component={Blog}/>
                 <Route path="/portfolio" component={Portfolio}/>
+              </div>
             </div>
             <div className="footer">
+              <div className="mwc">
                 <p>Copyright &copy; 2020 James Pereira</p>
+              </div>
             </div>
           </div>
         </HashRouter>

@@ -5,7 +5,7 @@ class Portfolio extends Component {
         return (
             <div>
                 <h2>Portfolio</h2>
-                <p>Place holder for all porfolio items; games sites / web apps?.
+                <p className="content-description">Place holder for all porfolio items; games sites / web apps.
                 </p> 
             </div>
         );

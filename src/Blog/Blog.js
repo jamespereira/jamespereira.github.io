@@ -28,7 +28,7 @@ class Blog extends Component {
         return (
             <div>
                 <h2>Blog</h2>
-                <p>My on going experience through out my react journey</p>
+                <p className="content-description">My on going experience throughout my react journey.</p>
                 <Entry040820 />
                 <Entry020820 />
                 
