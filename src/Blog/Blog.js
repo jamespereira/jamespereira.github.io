@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
-import EntryImage from "./EntryImage";
+import EntryImage from './EntryImage';
+
+import styles from './Blog.module.css';
 
 const Entry040820 = () => (
-    <div className="entry">
-        <p className="entry-date">5 August 2020</p>
+    <div className={styles.entry}>
+        <p className={styles.entryDate}>5 August 2020</p>
         <p>Easily the biggest motivating factor for me is achieving a goal. However small it may be, the progress inspires me to keep pushing. Yesterday, after updating the entry format I wanted this site to be live (certainly helps not having to take screen shots to share it).</p>
         <p>I had used github pages before for job interviews to host a static site for free before, so at least I had some familiarity. This was the first time deploying a react site and really it was pretty straight forward. After creating a git repo for the project all I had to do was:</p>
         <ol>
@@ -25,11 +27,11 @@ const Entry040820 = () => (
     </div>
 );
 const Entry030820 = () => (
-    <div className="entry">
-        <p className="entry-date">4 August 2020</p>
+    <div className={styles.entry}>
+        <p className={styles.entryDate}>4 August 2020</p>
         <p>After building out the very basics of my site I'd decided to flesh out the blog, it's the most logical page to work on as it holds an update for everything I do. So how do I actually create each entry?</p>
         <p>My first attempt was to create a separate 'Entry' component, and then create a Date & Entry prop that would be entered on this page. Realising quickly that my props wouldnt take any html formatting as it was all a string.</p>
-        <div className="splitImgContainer">
+        <div className={styles.splitImgContainer}>
             <EntryImage imgURL = "https://i.imgur.com/ZBaxUAU.png" imgAlt="Entry Entry code" />
             <EntryImage imgURL = "https://i.imgur.com/OxPgDPo.png" imgAlt="First Entry page"/>
         </div>
@@ -38,8 +40,8 @@ const Entry030820 = () => (
     </div>
 );
 const Entry020820 = () => (
-    <div className="entry">
-        <p className="entry-date">2 August 2020</p>
+    <div className={styles.entry}>
+        <p className={styles.entryDate}>2 August 2020</p>
         <p>Okay, so really this entry was done on the second day. My first consisted of going through a SPA tutorial found at: <a href="https://www.kirupa.com/">https://www.kirupa.com</a> and then replicating it to create my own site.</p>
         <p>I styled it to look like the react.js home page for a themed react look.
         The actual pages built were Home, Blog and Portfolio. Today I expanded upon blog and updated it to include entries - this being the first!</p>
